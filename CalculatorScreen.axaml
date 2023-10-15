@@ -1,0 +1,45 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="450" Height="750" MinHeight="750" MinWidth="450" MaxHeight="750" MaxWidth="450"
+        x:Class="CalculatorQuest.CalculatorScreen"
+        Title="Calculatriceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee">
+        <Window.Background>
+                <ImageBrush Source=" C:\Users\matsu\Documents\CalculatorQuest\img.png" Stretch="Fill"></ImageBrush>
+        </Window.Background>
+        <Canvas>
+                
+                <Label Name="OperationLabel" Content=""  Canvas.Bottom="50" Canvas.Left="50" Canvas.Top="50"/>
+                <Label Name="Result" Content=""  Canvas.Top="100" Canvas.Left="50"/>
+                
+                <Button Background="#1A1A1A" FontSize="20" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="DelButton_OnClick" Name="Del" Content="DEL" Canvas.Left="350" Canvas.Top="340" Width="60" Height="60"></Button>
+                
+                <Button Background="#1A1A1A" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="CButton_OnClick" Name="ClearAll" Content="C" Canvas.Left="350" Canvas.Top="410" Width="60" Height="60"></Button>
+                <Button Background="#828282" FontSize="26" CornerRadius="50" Foreground="#000000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ButtonSign_OnClick" Name="Multiply" Content="*" Canvas.Top="340" Canvas.Left="275" Width="60" Height="60"></Button>
+                <Button Background="#828282" FontSize="26" CornerRadius="50" Foreground="#000000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="CeButton_OnClick" Name="CeButton" Content="CE" Canvas.Left="50" Canvas.Top="340" Width="60" Height="60"></Button>
+                <Button Background="#828282" FontSize="26" CornerRadius="50" Foreground="#000000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Sign_OnClick" Name="Sign" Content="+/-" Canvas.Left="125" Canvas.Top="340" Width="60" Height="60"></Button>
+                <Button Background="#828282" FontSize="26" CornerRadius="50" Foreground="#000000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ButtonSign_OnClick" Content="%" Canvas.Left="200" Canvas.Top="340" Width="60" Height="60"></Button>
+                <Button Background="#FF9F0A" FontSize="26" CornerRadius="50" Foreground="#000000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ButtonSign_OnClick" Content="/" Canvas.Left="275" Canvas.Top="410" Width="60" Height="60" ></Button>
+                <Button Background="#FF9F0A" FontSize="26" CornerRadius="50" Foreground="#000000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ButtonSign_OnClick" Content="-" Canvas.Left="275" Canvas.Top="480" Width="60" Height="60"></Button>
+                <Button Background="#FF9F0A" FontSize="26" CornerRadius="50" Foreground="#000000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ButtonSign_OnClick" Content="+" Canvas.Left="275" Canvas.Top="550" Width="60" Height="60"></Button>
+                <Button Background="#FF9F0A" FontSize="26" CornerRadius="50" Foreground="#000000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="EqualButton_OnClick" Name="EqualButton" Content="=" Canvas.Left="275" Canvas.Top="620" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="," Canvas.Left="200" Canvas.Top="620" Width="60" Height="60"></Button>
+                
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="9" Canvas.Left="200" Canvas.Top="410" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="8" Canvas.Left="125" Canvas.Top="410" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="7" Canvas.Left="50" Canvas.Top="410" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="6" Canvas.Left="200" Canvas.Top="480" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="5" Canvas.Left="125" Canvas.Top="480" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="4" Canvas.Left="50" Canvas.Top="480" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="3" Canvas.Left="200" Canvas.Top="550" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="2" Canvas.Left="125" Canvas.Top="550" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="1" Canvas.Left="50" Canvas.Top="550" Width="60" Height="60"></Button>
+                <Button Background="#2B2B2B" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_OnClick" Content="0" Canvas.Left="50" Canvas.Top="620" Width="135" Height="60"></Button>
+                
+                
+                <Button Background="#1A1A1A" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Square_OnClick" Content="x'2" Name="Square" Canvas.Left="350" Canvas.Top="480" Width="60" Height="60"></Button>
+                <Button Background="#1A1A1A" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Sqrt_OnClick" Content="√'2" Name="Sqrt" Canvas.Left="350" Canvas.Top="550" Width="60" Height="60"></Button>
+                <Button Background="#1A1A1A" FontSize="26" CornerRadius="50" Foreground="#ffffff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Invert_OnClick" Content="1/x" Name="Invert" Canvas.Left="350" Canvas.Top="620" Width="60" Height="60"></Button>
+        </Canvas>
+</Window>
